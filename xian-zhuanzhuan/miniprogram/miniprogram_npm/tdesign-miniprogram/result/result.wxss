@@ -1,0 +1,65 @@
+.t-float-left {
+  float: left;
+}
+.t-float-right {
+  float: right;
+}
+@keyframes tdesign-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.hotspot-expanded.relative {
+  position: relative;
+}
+.hotspot-expanded::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(1.5);
+}
+.t-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.t-result__title {
+  line-height: 56rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+.t-result__icon {
+  font-size: 80px;
+}
+.t-result__thumb + .t-result__title:not(:empty) {
+  margin-top: 16rpx;
+}
+.t-result__description {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 28rpx;
+  line-height: 44rpx;
+}
+.t-result__title + .t-result__description:not(:empty) {
+  margin-top: 24rpx;
+}
+.t-result--theme-default {
+  color: #0052d9;
+}
+.t-result--theme-success {
+  color: #00a870;
+}
+.t-result--theme-warning {
+  color: #ed7b2f;
+}
+.t-result--theme-error {
+  color: #e34d59;
+}

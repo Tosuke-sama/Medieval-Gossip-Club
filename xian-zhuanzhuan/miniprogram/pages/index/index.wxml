@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+<view class="info">
+  <text style="width: 60%; margin-left:10px;">{{date}}</text>
+  <view class="temp">气温：🌏<text style=" font-size: 10px;">平流层</text>：-213°</view>
+</view>
+<view class="imgbox">
+
+</view>
+
+<view class="text" >
+
+</view>
+</view> 

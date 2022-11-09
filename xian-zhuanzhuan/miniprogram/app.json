@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/goods/goods",
+    "pages/classify/classify"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "中古闲谈社",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-swiper-item": "tdesign-miniprogram/swiper/swiper-item",
+    "t-swiper-nav": "tdesign-miniprogram/swiper/swiper-nav",
+    "t-cell": "tdesign-miniprogram/cell/cell"
+  },
+  "tabBar": {
+    "color": "#FFB6C1",
+    "selectedColor": "#DC143C",
+    "backgroundColor": "whlie",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "夕拾杂谈",
+        "iconPath": "tubiao/home.png",
+        "selectedIconPath": "tubiao/home-select.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "列表",
+        "iconPath": "tubiao/place.png",
+        "selectedIconPath": "tubiao/place-select.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "tubiao/function.png",
+        "selectedIconPath": "tubiao/function-select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tubiao/user.png",
+        "selectedIconPath": "tubiao/user-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

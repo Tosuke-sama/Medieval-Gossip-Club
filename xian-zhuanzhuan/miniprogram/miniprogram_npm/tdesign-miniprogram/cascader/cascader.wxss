@@ -1,0 +1,150 @@
+.t-float-left {
+  float: left;
+}
+.t-float-right {
+  float: right;
+}
+@keyframes tdesign-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.hotspot-expanded.relative {
+  position: relative;
+}
+.hotspot-expanded::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(1.5);
+}
+.t-cascader {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000000;
+}
+.t-cascader__close-btn {
+  right: 16px;
+  top: 12px;
+  position: absolute;
+}
+.t-cascader__title {
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+}
+.t-cascader__content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.t-cascader__options {
+  height: 320px;
+}
+.t-cascader__options-title {
+  color: #888888;
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 16px;
+}
+.t-cascader__options-content {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+  padding-left: 16px;
+}
+.t-cascader__options-container {
+  display: flex;
+  transition: all ease 0.3s;
+}
+.t-cascader__step {
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.t-cascader__steps {
+  padding: 0 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.t-cascader__step-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #bbbbbb;
+  box-sizing: border-box;
+}
+.t-cascader__step-dot:not(.t-cascader__step-dot--last)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  height: calc(44px - 8px);
+  width: 0;
+  border-left: 1px dashed #bbbbbb;
+  transform: translateX(-50%);
+}
+.t-cascader__step-dot--active {
+  background: #0052d9;
+  border-color: #0052d9;
+}
+.t-cascader__step-label {
+  padding-left: 16px;
+  font-size: 16px;
+}
+.t-cascader__step-label--active {
+  color: #0052d9;
+}
+.t-cascader__swiper {
+  height: 320px;
+}
+.t-cascader-item {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 48px;
+}
+.t-cascader-item-content {
+  flex-grow: 1;
+}
+.t-cascader-item.active {
+  color: #0052d9;
+}
+.t-cascader-item.disabled {
+  color: rgba(0, 0, 0, 0.26);
+  cursor: not-allowed;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+.slide-enter-from {
+  transform: translateX(100%);
+}
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+}

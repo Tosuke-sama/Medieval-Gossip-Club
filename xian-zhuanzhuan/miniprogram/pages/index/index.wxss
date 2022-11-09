@@ -1,0 +1,33 @@
+/**index.wxss**/
+.container{
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.info{
+  height: 6vh;
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 6vh;
+  display: flex;
+}
+.img-card{
+  height: 500px;
+  width: 100%;
+}
+.imgbox{
+  height: 100%;
+  width: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.temp{
+  width: 40%;
+  font-size: 13px;
+}
+.card{
+  height: 60vh;
+  width: 100%;
+}

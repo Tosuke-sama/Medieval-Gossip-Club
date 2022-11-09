@@ -1,0 +1,160 @@
+.t-float-left {
+  float: left;
+}
+.t-float-right {
+  float: right;
+}
+@keyframes tdesign-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.hotspot-expanded.relative {
+  position: relative;
+}
+.hotspot-expanded::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(1.5);
+}
+.t-calendar {
+  position: relative;
+  z-index: 9999;
+  background: #fff;
+  overflow-x: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.t-calendar__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  height: 26px;
+  padding: 16px;
+}
+.t-calendar__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.t-calendar__days {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 46px;
+}
+.t-calendar__days-item {
+  width: 44px;
+  height: 46px;
+  font-size: 14px;
+  color: #444444;
+}
+.t-calendar__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0;
+  color: #909399;
+  font-size: 14px;
+}
+.t-calendar__content {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.t-calendar__month {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  padding: 16px 0 0;
+}
+.t-calendar__months {
+  max-height: 456px;
+  overflow-y: scroll;
+  padding: 0 16px 16px;
+}
+.t-calendar__months::-webkit-scrollbar {
+  display: none;
+}
+.t-calendar__dates {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.t-calendar__dates-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 49px;
+  height: 60px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.t-calendar__dates-item-prefix,
+.t-calendar__dates-item-suffix {
+  position: absolute;
+  font-size: 10px;
+  line-height: 16px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+.t-calendar__dates-item-prefix {
+  top: 4px;
+}
+.t-calendar__dates-item-suffix {
+  bottom: 4px;
+  color: #888888;
+}
+.t-calendar__dates-item-suffix--selected,
+.t-calendar__dates-item-suffix--start,
+.t-calendar__dates-item-suffix--end {
+  color: #fff;
+}
+.t-calendar__dates-item-suffix--disabled {
+  color: #bbbbbb;
+}
+.t-calendar__dates-item--selected,
+.t-calendar__dates-item--start,
+.t-calendar__dates-item--end {
+  background: #0053db;
+  color: #fff;
+  border-radius: 4px;
+}
+.t-calendar__dates-item--start {
+  border-radius: 4px 0 0 4px;
+}
+.t-calendar__dates-item--end {
+  border-radius: 0 4px 4px 0;
+}
+.t-calendar__dates-item--centre {
+  border-radius: 0;
+  background-color: #ecf2fe;
+}
+.t-calendar__dates-item--disabled {
+  color: #bbbbbb;
+  cursor: default;
+}
+.t-calendar__footer {
+  border-top: 1px solid #e7e7e7;
+  padding: 16px;
+}

@@ -1,0 +1,12 @@
+page {
+  --td-avatar-group-border-color: #fff;
+}
+.border--small {
+  border: 4rpx solid var(--td-avatar-group-border-color, #fff);
+}
+.border--medium {
+  border: 6rpx solid var(--td-avatar-group-border-color, #fff);
+}
+.border--large {
+  border: 8rpx solid var(--td-avatar-group-border-color, #fff);
+}
