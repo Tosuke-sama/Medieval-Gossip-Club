@@ -70,4 +70,12 @@ public interface ItaUserService {
     String getUserByBiography(String cloudid);
 
     int modifyByBiography(ItaUser user);
+
+    String getByUserIndex(String cloudid);
+
+    int modifyUserIndex(ItaUser user);
+
+    String getByUserIntegral(String cloudid);
+
+    ItaUser getUerAllIndex(String openid);
 }

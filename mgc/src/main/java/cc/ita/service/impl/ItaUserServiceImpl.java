@@ -145,4 +145,33 @@ public class ItaUserServiceImpl implements ItaUserService {
         this.itaUserDao.modifyByBiography(user);
         return 0;
     }
+
+    @Override
+    public String getByUserIndex(String cloudid) {
+        return this.itaUserDao.getByUserIndex(cloudid);
+    }
+
+    @Override
+    public int modifyUserIndex(ItaUser user) {
+        this.itaUserDao.modifyUserIndex(user);
+        return 0;
+    }
+
+    @Override
+    public String getByUserIntegral(String cloudid) {
+        return this.itaUserDao.getByUserIntegral(cloudid);
+    }
+
+    @Override
+    public ItaUser getUerAllIndex(String openid) {
+        if(openid==null){
+            return null;
+        }
+        ItaUser itaUser=queryByCloudId(openid);
+        if(itaUser==null){
+            return null;
+        }
+
+        return itaUser;
+    }
 }

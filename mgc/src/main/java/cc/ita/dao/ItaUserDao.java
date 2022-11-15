@@ -96,5 +96,11 @@ public interface ItaUserDao {
     String getUserByBiography(String cloudid);
 
     int modifyByBiography(ItaUser user);
+
+    String getByUserIndex(String cloudid);
+
+    int modifyUserIndex(ItaUser user);
+
+    String getByUserIntegral(String cloudid);
 }
 
